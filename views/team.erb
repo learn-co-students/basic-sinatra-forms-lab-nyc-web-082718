@@ -5,10 +5,11 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
+   <p> <% params.each do |p,v| %>
+     <%= p.to_s+": "+v.to_s %><br>
+     <% end %>
+   </p>
 
 
  </body>
 </html>
-
-
